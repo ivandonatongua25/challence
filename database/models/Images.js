@@ -24,12 +24,12 @@ module.exports = (sequelize, dataTypes)=> {
         underscored: true
     }
 
-const Color = sequelize.define(alias,cols,config);
+const Images = sequelize.define(alias,cols,config);
 
 //Asociacion
 
-Color.associate = function(models){
-    Color.belongsTo(models.Products,{
+Images.associate = function(models){
+    Images.belongsTo(models.Products,{
         as: 'products',
         foreignKey: 'product_id'
 
