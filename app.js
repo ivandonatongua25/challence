@@ -1,3 +1,4 @@
+
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -9,7 +10,7 @@ const API = require('./routes/APIrouter');
 const index = require('./routes/Router');
 
 const app = express();
-
+app.set('puerto',process.env.PORT||2000);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -42,5 +43,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+app.listen(app.get('puerto'),()=>console.log("servidor corriendo en el puerto :",app.get('puerto')));
 module.exports = app;
