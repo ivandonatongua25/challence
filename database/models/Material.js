@@ -3,7 +3,7 @@ module.exports = (sequelize, dataTypes)=> {
     let cols = {
         id: {
             type: dataTypes.INTEGER(11).UNSIGNED,
-            primaruKey: true,
+            primaryKey: true,
             allowNull: false,
             autoIncrement: true
         },
@@ -23,13 +23,13 @@ module.exports = (sequelize, dataTypes)=> {
 const Material = sequelize.define(alias,cols,config);
 
 //Asociacion
-
+/*
 Material.associate = function(models){
     Material.hasMany(models.Products,{
         as: 'products',
         foreignKey: 'material_id'
 
     });
-}
+}*/
 return Material;
 };

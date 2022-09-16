@@ -2,8 +2,8 @@ module.exports = (sequelize, dataTypes)=> {
     let alias ='Brand';
     let cols = {
         id: {
-            type: dataTypes.INTEGER(11).UNSIGNED,
-            primaruKey: true,
+            type: dataTypes.INTEGER(11),
+            primaryKey: true,
             allowNull: false,
             autoIncrement: true
         },

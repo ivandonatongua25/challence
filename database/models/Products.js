@@ -1,9 +1,9 @@
-module.exports = (sequelize, dataTypes)=> {
+module.exports = (sequelize,dataTypes)=> {
     let alias ='Products';
     let cols = {
         id: {
             type: dataTypes.INTEGER(11).UNSIGNED,
-            primaruKey: true,
+            primaryKey: true,
             allowNull: false,
             autoIncrement: true
         },
@@ -18,19 +18,19 @@ module.exports = (sequelize, dataTypes)=> {
         description: {
             type: dataTypes.STRING(500),
             allowNull: false
-        },
+        },/*
         brand_id: {
-            type: dataTypes.INTEGER(11),
-            allowNull: false
+            type: dataTypes.INTEGER(11).UNSIGNED,
+            allowNull: true
         },
         material_id: {
-            type: dataTypes.INTEGER(11),
-            allowNull: false
+            type: dataTypes.INTEGER(11).UNSIGNED,
+            allowNull: true
         },
         color_id: {
-            type: dataTypes.INTEGER(11),
-            allowNull: false
-        },
+            type: dataTypes.INTEGER(11).UNSIGNED,
+            allowNull: true
+        },*/
 
     };
     let config = {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETALLE DE PRODUCTOS </title>
+</head>
+<body>
+    
+    
+        <h1 class="listado">productos.name</h1>
+      
+      <ul class="articulos">
+            <p class="id"><%=productos.id %> </p>
+            <p class="name"><%=productos.name %> </p>
+            <p class="price"><%=productos.price%> </p>
+            <p class="description"><%=productos.description%> </p>
+            <p class="brand_id"><%=productos.brand_id%> </p>
+            <p class="material_id"><%=productos.material_id%> </p>
+            <p class="color_id"><%=productos.color_id%> </p>
+        </ul>
+        <a href="/edit/<%=productos.id %>">Editar</a>
+        <a href="/delete/<%=productos.id %>">Eliminar</a>
+</body>
+</html>

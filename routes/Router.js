@@ -5,5 +5,17 @@ const Controller = require('../controllers/Controller')
 
 router.get('/', Controller.index); 
 
+router.get('/home', Controller.home);
+router.get("/detail/:id",Controller.detail);
+
+router.get("/create",Controller.add);
+router.post("/create",Controller.create);
+
+router.get("/edit/:id/",Controller.edit);
+router.put("/edit/:id/",Controller.update);
+
+router.get("/delete/:id/",Controller.delete);
+router.delete("/delete/:id/",Controller.destroy);
+
 
 module.exports = router;

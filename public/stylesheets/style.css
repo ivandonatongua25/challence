@@ -152,3 +152,33 @@ font-style: italic;color: chartreuse;}
   font-size: 2.5em;
 }
 
+.articulos{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.listado{
+  margin-top: 29px;
+}
+.name{
+  margin-bottom: 10px;
+
+}
+.price{
+  margin-bottom: 10px;
+}
+.description{
+  
+  margin-bottom: 10px;
+}
+.brand_id{
+  
+  margin-bottom: 10px;
+}
+.material_id{
+  
+  margin-bottom: 10px;
+}
+.color_id{
+  
+  margin-bottom: 10px;
+}
