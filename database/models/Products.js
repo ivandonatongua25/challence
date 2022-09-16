@@ -18,7 +18,7 @@ module.exports = (sequelize,dataTypes)=> {
         description: {
             type: dataTypes.STRING(500),
             allowNull: false
-        },/*
+        },
         brand_id: {
             type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull: true
@@ -30,7 +30,7 @@ module.exports = (sequelize,dataTypes)=> {
         color_id: {
             type: dataTypes.INTEGER(11).UNSIGNED,
             allowNull: true
-        },*/
+        },
 
     };
     let config = {

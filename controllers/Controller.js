@@ -35,13 +35,13 @@ const Controller = {
 
         db.Products.create({
             
-            ...req.body
            
             
+           
+            ...req.body
         })
-        .then((productos)=>{
-            res.redirect("/");
-        })
+        .then(()=>res.redirect("/"));
+        console.log(req.body);
         
         
     },

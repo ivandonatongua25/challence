@@ -9,7 +9,7 @@ router.get('/home', Controller.home);
 router.get("/detail/:id",Controller.detail);
 
 router.get("/create",Controller.add);
-router.post("/create",Controller.create);
+router.post("/creat",Controller.create);
 
 router.get("/edit/:id/",Controller.edit);
 router.put("/edit/:id/",Controller.update);
