@@ -1,5 +1,8 @@
 const db=require("../database/models/index");
 let { validationResult } = require('express-validator');
+const express = require('express');
+const app = express();
+app.use(express.json());
 
 const Controller = {
 
@@ -32,16 +35,25 @@ const Controller = {
         
     },
     create:(req,res)=>{
-
-        db.Products.create({
+        const errors= validationResult(req);
+       
+        if(!errors.isEmpty()){
+            return res.status(400).json({ errors: errors.array() });
             
            
             
+        }else{
+            db.Products.create({
            
-            ...req.body
-        })
-        .then(()=>res.redirect("/"));
+           
+                ...req.body
+            })
+            .then(()=>res.redirect("/"));
+           
+            console.log({errors:errors});
+        }
         console.log(req.body);
+        
         
         
     },

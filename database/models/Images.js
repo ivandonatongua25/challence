@@ -10,11 +10,11 @@ module.exports = (sequelize, dataTypes)=> {
         url: {
             type: dataTypes.STRING(500),
             allowNull: false
-        },/*
+        },
         product_id: {
             type: dataTypes.INTEGER(11),
             allowNull: false
-        },*/
+        },
 
     };
     let config = {
