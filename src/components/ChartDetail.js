@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChartRow (props) {
+function ChartDetail (props) {
 return(
 
     <React.Fragment>
@@ -22,4 +22,4 @@ return(
 )
 }
 
-export default ChartRow
+export default ChartDetail

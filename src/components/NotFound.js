@@ -1,5 +1,5 @@
 import React from "react";
-import Vader from "../assets/images/darth-vader.jpg"
+import Vader from "../assets/images/ivan-donato.jpg"
 
 function NotFound(){
     return(

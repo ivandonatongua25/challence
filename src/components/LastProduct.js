@@ -1,7 +1,7 @@
 import React from "react";
-import mando from "../assets/images/mandalorian.jpg"
+import mando from "../assets/images/ultimo-producto.jpg"
 
-function LastMovie () {
+function LastProduct () {
 
 return (
 
@@ -16,7 +16,7 @@ return (
                                 <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={mando} alt=" Star Wars - Mandalorian "/>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-                            <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View Product detail</a>
+                            <a className="btn btn-danger" target="_blank" rel="nofollow" href="/detail">View Product detail</a>
                         </div>
                     </div>
                 </div>
@@ -25,4 +25,4 @@ return (
 )
 }
 
-export default LastMovie
+export default LastProduct

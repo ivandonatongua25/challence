@@ -1,28 +1,28 @@
 import React from "react"
 import Card from "./Card"
 
-let moviesInDB = {
-    title: 'Movies in Data Base',
+let ProductsInDB = {
+    title: 'Productos en la Data Base',
     color: 'primary', 
     cuantity: 21,
     icon: 'fa-film'
 }
 
-let totalAwards = {
-    title:' Total awards', 
+let totalcategorias = {
+    title:' Total de Categorias', 
     color:'success', 
     cuantity: '79',
     icon:'fa-award'
 }
 
-let actorsQuantity = {
-    title:'Actors quantity' ,
+let valoraciones = {
+    title:'Valoraciones Start' ,
     color:'warning',
     cuantity:'49',
     icon:'fa-user-check'
 }
 
-let cardProps = [moviesInDB, totalAwards, actorsQuantity]
+let cardProps = [ProductsInDB, totalcategorias, valoraciones]
 
 function CardList () {
 

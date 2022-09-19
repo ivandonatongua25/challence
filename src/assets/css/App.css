@@ -74,7 +74,7 @@ body {
     line-height: 1.5;
     color: #858796;
     text-align: left;
-    background-color: #fff
+    background-color: rgba(255, 0, 0, 0.815);
 }
 
 [tabindex="-1"]:focus {
@@ -619,6 +619,7 @@ pre code {
     padding-left: .75rem;
     margin-right: auto;
     margin-left: auto
+    
 }
 
 .row {
@@ -6816,7 +6817,7 @@ button.bg-dark:hover {
 }
 
 .bg-white {
-    background-color: #fff !important
+    background-color:#dda20a !important
 }
 
 .bg-transparent {

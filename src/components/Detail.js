@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import ChartRow from './ChartRow';
+import ChartDetail from './ChartDetail';
 
 
-class Chart extends Component{
+class Detail extends Component{
     constructor(){
         super()
         this.state = {
 
-            productList: null
+            product: null
 
         }
     }
 
 componentDidMount(){
 
-    fetch("http://localhost:3001/api/products")
-    .then( res => res.json())
+    fetch("http://localhost:3001/api/products/:id")
+    
     .then(productos => {
 
-        this.setState ({ productList: productos.data})
+        this.setState ({ product: productos.data})
 
-    console.log("🚀 ~ file: Chart.js ~ line 19 ~ Chart ~ componentDidMount ~ data ", productos )
+    console.log("🚀 ~ file: Detail.js ~ line 19 ~ Detail ~ componentDidMount ~ data ", productos )
 
    
     })
@@ -51,11 +51,13 @@ render(){
                         <tbody>
 
 
-                    { this.state.productList ? this.state.productList.map ((row, i) =>
+                    
+                    { 
+                    this.state.product ? this.state.product.map ((row, i) =>
 
-                        <ChartRow {...row} key={i}  />) : <div> Loading... </div>
+                        <ChartDetail {...row} key={i}  />) : <div> Loading... </div>
                         
-                    }
+}
 
                     
 
@@ -71,4 +73,4 @@ render(){
 }
 }
 
-export default Chart
+export default Detail

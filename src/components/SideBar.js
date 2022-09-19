@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/images/logo-DH.png"
+import logo from "../assets/images/logo.png"
 import {Link, Route, Switch } from 'react-router-dom'
 import ContentWarapper from "./ContentWrapper"
 import LastProduct from "./LastProduct"
@@ -8,6 +8,7 @@ import CardList from "./CardList"
 import Chart from "./Chart"
 import NotFound from "./NotFound"
 import SearchProducts from "./SearchProducts"
+import Detail from "./Detail"
 
 
 function SideBar () {
@@ -36,7 +37,7 @@ function SideBar () {
 			<div className="sidebar-heading">Actions</div>
 
 			<li className="nav-item">
-				<Link className="nav-link collapsed" to="/last-movie">
+				<Link className="nav-link collapsed" to="/last-product">
 					<i className="fas fa-fw fa-folder"></i>
 					<span>Last Product</span>
 				</Link>
@@ -69,11 +70,13 @@ function SideBar () {
 		<Switch>
 
 			<Route exact={true} path="/"> <ContentWarapper /></Route>
-			<Route  path="/last-movie"> <LastProduct /></Route>
+			<Route  path="/last-product"> <LastProduct /></Route>
 			<Route  path="/brand"> <CategoriesInDb /> </Route>
 			<Route  path="/charts"> <CardList /> </Route>
 			<Route  path="/table"> <Chart /> </Route>
+			<Route  path="/detail"> <Detail/> </Route>
 			<Route  path="/search"> <SearchProducts /> </Route>
+			<Route  path="/last-product"> <LastProduct /></Route>
 			{/* <Route  path="categories/:id"> <CategoryDetail /></Route> */}
 			<Route path="*"> <NotFound /> </Route>
 

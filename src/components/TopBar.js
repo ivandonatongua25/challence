@@ -1,5 +1,5 @@
 import React from "react"
-import avatar from "../assets/images/jordan-walke.png"
+import avatar from "../assets/images/ivan-donato-ngua.jpg"
 
 function TopBar () {
 
@@ -29,7 +29,7 @@ function TopBar () {
 
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="/" id="userDropdown">
-								<span class="mr-2 d-none d-lg-inline text-gray-600 small">Jordan Walke</span>
+								<span class="mr-2 d-none d-lg-inline text-gray-600 small">Ivan Donato</span>
 								<img class="img-profile rounded-circle" src= {avatar} alt="Jordan Walke - Creador de React" width="60"/>
 							</a>
 						</li>
