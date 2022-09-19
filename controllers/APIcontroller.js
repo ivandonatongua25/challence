@@ -31,7 +31,6 @@ const APIcontroller = {
             let respuesta={
                 meta:{
                     status :200,
-                    total:productos.length,
                     url:'api/products/:id'
                 },
                 data: productos
