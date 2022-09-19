@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Genre (props){
+function Category (props){
 return(
 
             <div className="col-lg-6 mb-4">
@@ -15,4 +15,4 @@ return(
 )
 }
 
-export default Genre
+export default Category

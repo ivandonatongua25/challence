@@ -1,8 +1,8 @@
 import React from "react"
 import CardList from "./CardList"
-import LastMovie from "./LastMovie"
-import GenresInDb from "./GenresInDb"
-import SearchMovies from "./SearchMovies"
+import LastProduct from "./LastProduct"
+import CategoriesInDb from "./CategoriesInDb"
+import SearchProducts from "./SearchProducts"
 			
 function ContentRowTop (){
     
@@ -14,9 +14,9 @@ function ContentRowTop (){
 					</div>
 			        <CardList />
 					<div className="row">
-					<SearchMovies />
-					<LastMovie />
-					<GenresInDb />
+					<SearchProducts />
+					<LastProduct />
+					<CategoriesInDb />
 					</div>
 			</div>
 

@@ -2,12 +2,12 @@ import React from "react"
 import logo from "../assets/images/logo-DH.png"
 import {Link, Route, Switch } from 'react-router-dom'
 import ContentWarapper from "./ContentWrapper"
-import LastMovie from "./LastMovie"
-import GenresInDb from "./GenresInDb"
+import LastProduct from "./LastProduct"
+import CategoriesInDb from "./CategoriesInDb"
 import CardList from "./CardList"
 import Chart from "./Chart"
 import NotFound from "./NotFound"
-import SearchMovies from "./SearchMovies"
+import SearchProducts from "./SearchProducts"
 
 
 function SideBar () {
@@ -28,7 +28,7 @@ function SideBar () {
 			<li className="nav-item active">
 				<Link className="nav-link" to="/">
 					<i className="fas fa-fw fa-tachometer-alt"></i>
-					<span>Dashboard - DH movies</span></Link>
+					<span>Dashboard - DH Productos</span></Link>
 			</li>
 
 			<hr className="sidebar-divider"/>
@@ -38,14 +38,14 @@ function SideBar () {
 			<li className="nav-item">
 				<Link className="nav-link collapsed" to="/last-movie">
 					<i className="fas fa-fw fa-folder"></i>
-					<span>Last Movie</span>
+					<span>Last Product</span>
 				</Link>
 			</li>
 
 			<li className="nav-item">
-				<Link className="nav-link collapsed" to="/genres-list">
+				<Link className="nav-link collapsed" to="/brand">
 					<i className="fas fa-fw fa-folder"></i>
-					<span>Genres List</span>
+					<span>Category List</span>
 				</Link>
 			</li>
 
@@ -69,11 +69,11 @@ function SideBar () {
 		<Switch>
 
 			<Route exact={true} path="/"> <ContentWarapper /></Route>
-			<Route  path="/last-movie"> <LastMovie /></Route>
-			<Route  path="/genres-list"> <GenresInDb /> </Route>
+			<Route  path="/last-movie"> <LastProduct /></Route>
+			<Route  path="/brand"> <CategoriesInDb /> </Route>
 			<Route  path="/charts"> <CardList /> </Route>
 			<Route  path="/table"> <Chart /> </Route>
-			<Route  path="/search"> <SearchMovies /> </Route>
+			<Route  path="/search"> <SearchProducts /> </Route>
 			{/* <Route  path="categories/:id"> <CategoryDetail /></Route> */}
 			<Route path="*"> <NotFound /> </Route>
 
