@@ -10,7 +10,7 @@ const API = require('./routes/APIrouter');
 const index = require('./routes/Router');
 
 const app = express();
-app.set('puerto',process.env.PORT||2000);
+app.set('puerto',process.env.PORT||3001);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -25,6 +25,7 @@ app.use(methodOverride('_method'));
 
 //app.use(API, '/api')
 app.use(index)
+app.use(API)
 
 
 
